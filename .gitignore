@@ -1,0 +1,5 @@
+packages/
+.vs/
+src/obj/
+src/bin/
+src/App.config
