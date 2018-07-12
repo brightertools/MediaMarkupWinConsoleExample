@@ -16,11 +16,11 @@ namespace MediaMarkupWinConsoleExample
             // Create API Client
             var apiClient = new MediaMarkup.ApiClient(clientSettings);
 
-            // Initialise API Client (Validates api keys and gets an api token for subsequest api calls)
+            // Initialise API Client (Validates api keys and gets an api token for subsequent api calls)
             var token = AsyncHelpers.RunSync(() => apiClient.InitializeAsync());
 
-            var authenticated = AsyncHelpers.RunSync(() => apiClient.Authenticated());
             // Check authentication
+            var authenticated = AsyncHelpers.RunSync(() => apiClient.Authenticated());
 
             Console.WriteLine($"MediaMarkup Authenticated: {(authenticated ? "Yes" : "No")}");
 
